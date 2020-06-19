@@ -20,4 +20,7 @@ for filename in os.listdir('.\\cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
-client.run('NzE4Njc3ODUxNTQwNTUzNzM1.XtspRQ.iBIYvaO8YbCGpSX6TOVsrr4Zt58')
+f = open("D://dev/discord_bot/mafia_bot/token.txt", 'r')
+token = f.readline()
+client.run(token)
+f.close()
